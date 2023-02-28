@@ -1,78 +1,14 @@
 import React from "react";
 import Footer from "../footer_component/Footer";
-import MobileNavbar from "../navbar_component/MobileNavbar";
 import Navbar from "../navbar_component/Navbar";
 
-export default function HomePage() {
+export default function ProjectPage() {
   return (
     <div className="  mx-14  ">
-      <div>
-        <div className="hidden lg:block">
-          <Navbar />
-        </div>
-        <div className="block lg:hidden">
-          <MobileNavbar />
-        </div>
-      </div>
-      {/* start section 1 */}
-      <div className=" flex flex-row md:flex md:flex-row md:justify-between md:mx-48 my-32">
-        <div className=" flex flex-col justify-start">
-          <p className=" text-2xl  text-solidHeading font-bold">Hi,</p>
-          <p className=" text-2xl  text-solidHeading font-bold">My name is</p>
-          <p className="text-transparent bg-clip-text text-2xl bg-gradient-to-r from-blue-400 to-purple-600 font-bold">
-            Shamim Hasnain
-          </p>
-          <p className=" text-2xl  text-solidHeading font-bold">
-            FLUTTER and MERN Developer
-          </p>
-        </div>
-        {/* end text */}
-        <div>
-          <img
-            src="/images/myimage.jpg"
-            className=" md:h-32 md:w-32 h-40 w-40  border-2 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500   p-1"
-          />
-        </div>
-        {/* end image */}
-      </div>
-
-      {/* end section 1 */}
-
-      {/* start section 2 */}
-
-      <div className="md:mx-48 mb-20">
-        <h4 className=" flex justify-center items-center text-solidHeading font-bold text-2xl mb-1">
-          My Tech Stack
-        </h4>
-        <p className=" flex justify-center items-center text-gray text-sm">
-          Technologies I’ve been working with recently
-        </p>
-        <div className="mt-10 md:grid md:grid-cols-6 md:gap-20 grid grid-cols-3 gap-10 md:ml-0 ml-6">
-          <img src="/images/flutter.png" className=" h-16 w-16" />
-          <img src="/images/dart.png" className=" h-16 w-16" />
-          <img src="/images/html.png" className=" h-16 w-16" />
-          <img src="/images/tailwind.png" className=" h-16 w-16" />
-          <img src="/images/js.png" className=" h-16 w-16" />
-          <img src="/images/react.png" className=" h-16 w-16" />
-          <img src="/images/node.png" className=" h-16 w-16" />
-          <img src="/images/mon.png" className=" h-16 w-16" />
-          <img src="/images/mysql.png" className=" h-16 w-16" />
-          <img src="/images/lv.png" className=" h-16 w-16" />
-          <img src="/images/github.png" className=" h-16 w-16" />
-          <img src="/images/gitbash.png" className=" h-16 w-16" />
-        </div>
-      </div>
-
-      {/* end section 2 */}
-
-      {/* start section 3 */}
-      <div className="md:mx-48 mb-20">
-        <h4 className=" flex justify-center items-center text-solidHeading font-bold text-2xl mb-1">
-          Projects
-        </h4>
-        <p className=" flex justify-center items-center text-gray text-sm">
-          Things I’ve built so far
-        </p>
+      <Navbar />
+      <div className=" my-20 md:mx-48">
+        <h1 className=" text-solidHeading text-2xl font-bold mb-3">Projects</h1>
+        <p className=" text-gray text-sm mb-4">Things I’ve built so far</p>
         <div className=" mt-10 md:grid md:grid-cols-3 md:gap-24 grid grid-cols-2 gap-10 ml-6 md:ml-0">
           {/* start card */}
           <div className=" h-64 w-40 md:w-48 shadow-lg rounded-md bg-white flex flex-col">
@@ -256,7 +192,6 @@ export default function HomePage() {
           {/* end card */}
         </div>
       </div>
-      {/* end section 3 */}
       <Footer />
     </div>
   );
