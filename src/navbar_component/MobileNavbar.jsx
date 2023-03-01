@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function MobileNavbar() {
   const [show, setShow] = useState(false);
@@ -30,16 +31,29 @@ export default function MobileNavbar() {
         {show ? (
           <div className=" flex flex-col justify-start shadow-lg rounded-md p-2">
             <div className="  h-8  items-center hover:bg-buttonSuccess rounded-md mb-1">
-              <p className="text-gray ml-6 text-sm mt-1">Home</p>
+              <Link to="/">
+                <p className="text-gray ml-6 text-sm mt-1">Home</p>
+              </Link>
             </div>
             <div className="  h-8 items-center hover:bg-buttonSuccess rounded-md mb-1">
-              <p className="text-gray ml-6 text-sm mt-1">Work</p>
+              <Link to="/work">
+                <p className="text-gray ml-6 text-sm mt-1">Work</p>
+              </Link>
             </div>
             <div className="  h-8 items-center hover:bg-buttonSuccess rounded-md mb-1">
-              <p className="text-gray ml-6 text-sm mt-1">Education</p>
+              <Link to="/education">
+                <p className="text-gray ml-6 text-sm mt-1">Education</p>
+              </Link>
             </div>
             <div className="  h-8 items-center hover:bg-buttonSuccess rounded-md mb-1">
-              <p className="text-gray ml-6 text-sm mt-1">Contact</p>
+              <Link to="/project">
+                <p className="text-gray ml-6 text-sm mt-1">Project</p>
+              </Link>
+            </div>
+            <div className="  h-8 items-center hover:bg-buttonSuccess rounded-md mb-1">
+              <Link to="/contact">
+                <p className="text-gray ml-6 text-sm mt-1">Contact</p>
+              </Link>
             </div>
           </div>
         ) : (

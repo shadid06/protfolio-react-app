@@ -17,7 +17,9 @@ export default function Navbar() {
         <Link to="/project">
           <p className=" font-medium text-gray">Projects</p>
         </Link>
-        <p className=" font-medium text-gray">Contact</p>
+        <Link to="/contact">
+          <p className=" font-medium text-gray">Contact</p>
+        </Link>
         <div className=" flex flex-row space-x-2 mt-1">
           <img src="/images/github.png" className=" h-4 w-4" />
           <img src="/images/github.png" className=" h-4 w-4" />
